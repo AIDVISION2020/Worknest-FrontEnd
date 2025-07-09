@@ -1,0 +1,14 @@
+.detect-location-btn {
+  margin-top: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.detect-location-btn:hover {
+  background-color: #3367d6;
+}

@@ -1,0 +1,83 @@
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ticket-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: linear-gradient(90deg,#F1F5F9, #1F2937);
+}
+
+.ticket-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.ticket-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ticket-summary h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.requested { background-color: #F59E0B; }
+.status-badge.accepted { background-color: #3B82F6; }
+.status-badge.awaiting_user_confirmation { background-color: #8B5CF6; }
+.status-badge.completed { background-color: #10B981; }
+.status-badge.paid { background-color: #22C55E; }
+.status-badge.reviewed { background-color: #16A34A; }
+
+.ticket-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #E5E7EB;
+  color: #4B5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.ticket-stepper {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.ticket-stepper .step {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #E5E7EB;
+  color: #374151;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.ticket-stepper .step.active {
+  background: #4F46E5;
+  color: white;
+  font-weight: bold;
+  font-weight: 600;
+}
+

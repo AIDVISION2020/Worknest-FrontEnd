@@ -1,0 +1,80 @@
+.stepper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 1rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+/* The line behind steps */
+.stepper-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+/* Active fill on line */
+.stepper-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  height: 3px;
+  background-color: #2f80ed;
+  z-index: 2;
+  width: calc((100% - 20%) * var(--progress));
+}
+
+/* Each step */
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  z-index: 3;
+
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 6px;
+  z-index: 3;
+}
+
+.stepper-item.active .step-circle {
+  background-color: #2f80ed;
+}
+
+.step-title {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #888;
+  max-width: 80px;
+  word-wrap: break-word;
+}
+
+.stepper-item.active .step-title {
+  color: #2f80ed;
+  font-weight: 600;
+}

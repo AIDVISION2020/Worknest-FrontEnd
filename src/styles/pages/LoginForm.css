@@ -1,0 +1,130 @@
+.wrapper{
+  width:420px;
+  background:white;
+  backdrop-filter: blur(25px); /* Blur background behind */
+  -webkit-backdrop-filter: blur(10px);
+  color:#1F2937;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1{
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper .input-box{
+  position:relative;
+  width:100%;
+  height:50px;
+  margin:30px 0;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  border: 2px solid #D1D5DB;
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color:#111827;
+  padding: 20px 45px 20px 20px;
+  background-color: #F9FAFB;
+}
+
+.input-box input:focus {
+  border-color: #4F46E5;
+  background-color: #ffffff;
+}
+
+.input-box input::placeholder{
+  color:#9CA3AF;
+  text-decoration-color: #9CA3AF;
+  text-emphasis-color: #9CA3AF;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #6B7280;
+}
+
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  color: #1F2937;
+}
+
+.remember-forgot label input {
+  accent-color: #4F46E5;
+  margin-right: 6px;
+}
+
+.remember-forgot a {
+  color:#4F46E5;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper button{
+  width: 100%;
+  height: 45px;
+  background-color: #4F46E5;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  color:white;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.wrapper button:hover {
+  background-color: #4338CA;
+}
+
+.wrapper .registration-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: #1F2937;
+}
+
+.registration-link p a {
+  color:#4F46E5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registration-link p a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7, #f9fafb);
+}

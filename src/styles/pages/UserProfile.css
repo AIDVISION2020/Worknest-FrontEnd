@@ -1,0 +1,268 @@
+.worknest-profile-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #F8FAFC;
+  color: #1E293B;
+  min-height: 100vh;
+}
+
+/* Top Header */
+.profile-header {
+  background: linear-gradient(90deg, #F1F5F9, #1F2937);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 4px solid #4F46E5;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.role-badge {
+  background: rgba(255, 255, 255, 0.2);
+  background-color: #4F46E5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Layout */
+.profile-layout {
+  display: flex;
+  padding: 2rem 3rem;
+  gap: 2rem;
+}
+
+/* Sidebar Tabs */
+.profile-tabs {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-tabs button {
+  background: none;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.profile-tabs button:hover,
+.profile-tabs button.active {
+  background-color: #EEF2FF;
+  color: #4F46E5;
+}
+
+/* Details Panel */
+.profile-details {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+}
+
+.info-group h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-item label {
+  font-weight: 600;
+  margin-right: 5px;
+  color: #6B7280;
+}
+
+.info-item span {
+  font-size: 1rem;
+  color: #111827;
+}
+
+.basic-info-floating-card {
+  position: relative;
+  top: -40px; /* pull it upwards into the banner */
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  max-width: 600px;
+  z-index: 10;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+  margin-top: 1rem;
+  padding: 8px 14px;
+  font-weight: 600;
+  background-color: #1F2937;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cancel-btn {
+  background-color: #D1D5DB;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: #4338CA;
+}
+
+.cancel-btn:hover {
+  background-color: #9CA3AF;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #E5E7EB;
+}
+.edit-form textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #E5E7EB;
+  resize: vertical;
+}
+
+.avatar-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-icon {
+  font-size: 64px;
+  color: #6366F1;
+}
+
+.edit-avatar-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.avatar-img, .avatar-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.edit-avatar-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #E5E7EB;
+  color: #374151;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.edit-avatar-icon:hover {
+  background: #D1D5DB;
+}
+
+.profile-picture-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #CBD5E1;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffffdd;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.upload-icon:hover {
+  background-color: #F3F4F6;
+}
