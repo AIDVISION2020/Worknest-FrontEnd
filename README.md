@@ -32,7 +32,7 @@
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/WorkNest-Frontend.git
+git clone https://github.com/MithunPranavaR/WorkNest-Frontend.git
 cd WorkNest-Frontend
 
 ### 2️⃣ Install Dependencies
