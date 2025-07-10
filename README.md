@@ -35,13 +35,14 @@
 git clone https://github.com/your-username/WorkNest-Frontend.git
 cd WorkNest-Frontend
 
-Install Dependencies
+### 2️⃣ Install Dependencies
 npm install
-Run the App
+### 3️⃣ Run the App
 npm start
 App runs on: http://localhost:3000
 
 Make sure your backend is running and CORS is enabled on Django side.
-
+🔐 Environment Variables (Optional)
 Create a .env file at the root and add:
 REACT_APP_API_BASE_URL=http://localhost:8000/api
+
